@@ -45,6 +45,6 @@ insert into Individual(cat_id, name, intake_date, age, sex)
 values
 (1, 'Erik', '04-Dec-2019', 17, 'F');
 
-insert into Individual(cat_id, name, intake_date, age, sex)
+insert into Individual(cat_id, name, breed, intake_date, age, sex)
 values
 (1, 'Minnie', '04-Dec-2019', 1, 'F');
