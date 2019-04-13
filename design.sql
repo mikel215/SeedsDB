@@ -22,7 +22,8 @@ create table medical_info(
     spayed_neutered BOOLEAN,
     DOSN DATE,
     medication varchar(20),
-    medication_cost NUMBER(6,2)
+    medication_cost NUMBER(6,2),
+    primary key(medical_id)
 );
 
 create table cat_info
