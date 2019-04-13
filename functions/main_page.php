@@ -10,10 +10,10 @@ function make_main_page()
     {
         destroy_and_exit("must enter a username and password!");
     }
-    $username = strip_tags($_POST["username"]);
-    $password = $_POST["password"];
-    $_SESSION["username"] = $username;
-    $_SESSION["password"] = $password;
+    #$username = strip_tags($_POST["username"]);
+    #$password = $_POST["password"];
+    #$_SESSION["username"] = $username;
+    #$_SESSION["password"] = $password;
 
     ?>
     <form method="post"

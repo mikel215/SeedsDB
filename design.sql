@@ -25,7 +25,6 @@ create table cat_info
   breed varchar2(20),
   age integer,
   sex char(1),
-  adopter_id integer,
   medical_id integer,
   foreign key(adopter_id) references individual(individual_id)
 );
