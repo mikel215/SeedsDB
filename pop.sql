@@ -39,3 +39,12 @@ values
 insert into Individual
 values
 (999, 'Bob', 'Ross', TRUE);
+
+--populating cat_info
+insert into Individual(cat_id, name, intake_date, age, sex)
+values
+(1, 'Erik', '04-Dec-2019', 17, 'F');
+
+insert into Individual(cat_id, name, intake_date, age, sex)
+values
+(1, 'Minnie', '04-Dec-2019', 1, 'F');

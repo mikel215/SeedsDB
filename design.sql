@@ -31,6 +31,7 @@ create table cat_info
   cat_id integer;
   name varchar2(20);
   DOB date;
+  breed varchar2(20);
   intake_date date;
   adopt_date date;
   age integer;
