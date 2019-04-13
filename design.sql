@@ -1,15 +1,3 @@
-CREATE TABLE Animal_information(
-    id INTEGER,
-    name varchar(20),
-    DOB date,
-    intake_date date,
-    adopt_date date,
-    age INTEGER,
-    sex char(1),
-    adopter_id INTEGER,
-    medical_id INTEGER
-    );
-
 CREATE TABLE Individual(
     individual_id INTEGER,
     f_name varchar(20),
