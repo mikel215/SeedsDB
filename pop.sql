@@ -45,22 +45,26 @@ insert into cat_info(cat_id, name, intake_date, breed, age, sex)
 values
 (1, 'Minnie', '04-Apr-2019', 'DSH Tuxedo Mix', 1, 'F');
 
-insert into Individual(cat_id, name, intake_date, age, sex)
+insert into cat_info(cat_id, name, intake_date, age, sex)
 values
 (2, 'Saffron', '04-Mar-2019', 1, 'F');
 
-insert into Individual(cat_id, name, intake_date, age, sex)
+insert into cat_info(cat_id, name, intake_date, age, sex)
 values
 (3, 'Lizzard', '27-Mar-2019', 4, 'M');
 
-insert into Individual(cat_id, name, intake_date, age, sex)
+insert into cat_info(cat_id, name, intake_date, age, sex)
 values
 (4, 'Franks', '15-Feb-2019', 2, 'M');
 
-insert into Individual(cat_id, name, intake_date, age, sex)
+insert into cat_info(cat_id, name, intake_date, age, sex)
 values
 (5, 'Mojave', '1-Dec-2019', 1, 'M');
 
-insert into Individual(cat_id, name, intake_date, adopt_date, sex)
+insert into cat_info(cat_id, name, intake_date, adopt_date, sex)
 values
 (6, 'Buster', '1-Dec-2019', '5-Feb-2019', 'M');
+
+insert into cat_info(cat_id, name, intake_date, breed, age, sex)
+values
+(6, 'Molly', '1-Dec-2019', 'Dilute Calico', 1, 'F');
