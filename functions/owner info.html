@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+    A form with a PHP document as its action attibute's value!
+
+    by: Sharon Tuttle
+    last modified: 2019-03-15
+
+    you can run this using the URL:
+    http://nrs-projects.humboldt.edu/~st10/s19cs328/328lab08/use-php.html
+-->
+
+<head>
+    <title> PHP-handled form </title>
+    <meta charset="utf-8" />
+
+    <link href="http://nrs-projects.humboldt.edu/~st10/styles/normalize.css"
+          type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+   <h1> Add Owner: </h1>
+
+   <form method="get"
+         action=
+             "http://nrs-projects.humboldt.edu/~st10/s19cs328/328lab08/welcome.php">
+       <fieldset>
+           <fieldset>
+               <legend> Person info: </legend>
+                   <label> Enter Persons Full Name:
+                       <input type="text" first_name="first_name" />
+                       <input type="text" last_name= "last_name" />
+                   </label> <br />
+
+                   <label> Can Owner Adopt:
+                       <label> No:
+                       <input type="radio" value="false" />
+                        </label>
+                        <label>Yes:
+                       <input type="radio" value="true" />
+                        </label>
+                   </label> <br />
+                   <label
+           </fieldset>
+
+           <input type="submit" />
+        </fieldset>
+    </form>
+
+    <hr />
+
+    <p>
+        Validate by pasting .xhtml copy's URL into<br />
+        <a href="https://html5.validator.nu/">
+            https://html5.validator.nu/
+        </a>
+    </p>
+
+    <p>
+        <a href=
+           "http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+            <img src="http://jigsaw.w3.org/css-validator/images/vcss"
+                 alt="Valid CSS3!" height="31" width="88" />
+        </a>
+    </p>
+
+</body>
+</html>
