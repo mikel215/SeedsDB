@@ -32,4 +32,16 @@ function insert_add_pet()
     $breed_var = strip_tags($_POST["animal_breed"]);
     $age_var = strip_tags($_POST["animal_breed"]);
     $sex_var = strip_tags($_POST["animal_gender"]);
+
+    oci_bind_by_name($db_insert, ":cat_name", $name_var);
+    oci_bind_by_name($db_insert, ":cat_dob", $dob_var);
+    oci_bind_by_name($db_insert, ":cat_intake_date", $intake_var);
+    oci_bind_by_name($db_insert, ":cat_adopt_date", $adopt_var);
+    oci_bind_by_name($db_insert, ":cat_breed", $breed_var);
+    oci_bind_by_name($db_insert, ":cat_age", $age_var);
+    oci_bind_by_name($db_insert, ":cat_sex", $sex_var);
+
+    oci_execute($db_insert, OCI_DEFAULT);
+    oci_commit($conn);
+    oci_free_statement($db_insert);
 }
