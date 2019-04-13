@@ -38,13 +38,13 @@ create table cat_info
   age integer;
   sex char(1);
   adopter_id integer;
-  medical_id integer;  
+  medical_id integer;
 }
 
 create table cat_owner
 {
-  cat_id integer;
   individual_id integer;
-  foreign key(cat_id) references cat_info;
+  cat_id integer;
   foreign key(individual_id) references individual;
+  foreign key(cat_id) references cat_info;
 }

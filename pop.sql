@@ -88,3 +88,28 @@ values
 insert into cat_info(cat_id, name, intake_date, adopt_date, age, sex)
 values
 (12, 'Harold', '28-Jan-2019', '01-Feb-2019', 10, 'M');
+
+-- populating the table cat_owner
+insert into cat_owner
+values
+(111, 12);
+
+insert into cat_owner
+values
+(111, 11);
+
+insert into cat_owner
+values
+(111, 6);
+
+insert into cat_owner
+values
+(111, 10);
+
+insert into cat_owner
+values
+(444, 9);
+
+insert into cat_owner
+values
+(444, 8);
