@@ -40,6 +40,69 @@ insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
 (999, 'Bob', 'Ross', TRUE);
 
+-- population medical_info
+insert into medical_info 
+(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+values
+(1, FALSE,'Anti-parasite', 14.99);
+
+insert into medical_info 
+(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+values
+(2, TRUE, '12-Mar-2019', NULL);
+
+insert into medical_info 
+(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+values
+(3, TRUE, '04-Apr-2019', 'Anti-fungal', 5.99);
+
+insert into medical_info 
+(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+values
+(4, TRUE, '23-Feb-2019', NULL);
+
+insert into medical_info 
+(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+values
+(5, TRUE, '9-Dec-2018', 'Anti-Flea', 19.99)
+
+insert into medical_info 
+(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+values
+(6, TRUE, '10-Dec-2018', 'Anti-Flea', 19.99);
+
+insert into medical_info 
+(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+values
+(7, TRUE, '11-Dec-2018', 'Anti-Parasite', 14.99);
+
+insert into medical_info 
+(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+values
+(8, TRUE, '20-Oct-2018', 'Anti-Flea', 19.99);
+
+insert into medical_info 
+(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+values
+(9, TRUE, '12-Aug-2018', NULL);
+
+insert into medical_info 
+(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+values
+(10, TRUE, '11-Jul-2018', 'Anti-Diarrhea', 3.50);
+
+insert into medical_info 
+(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+values
+(11, TRUE, '22-Dec-2018', NULL);
+
+insert into medical_info 
+(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+values
+(12, TRUE, '03-Feb-2019', 'Antibiotics', 99.99);
+
+ 
+
 --populating cat_info
 insert into cat_info(cat_id, name, intake_date, breed, age, sex)
 values
