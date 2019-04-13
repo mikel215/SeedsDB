@@ -41,10 +41,26 @@ values
 (999, 'Bob', 'Ross', TRUE);
 
 --populating cat_info
+insert into cat_info(cat_id, name, intake_date, breed, age, sex)
+values
+(1, 'Minnie', '04-Apr-2019', 'DSH Tuxedo Mix', 1, 'F');
+
 insert into Individual(cat_id, name, intake_date, age, sex)
 values
-(1, 'Erik', '04-Dec-2019', 17, 'F');
+(2, 'Saffron', '04-Mar-2019', 1, 'F');
 
-insert into Individual(cat_id, name, intake_date, breed, age, sex)
+insert into Individual(cat_id, name, intake_date, age, sex)
 values
-(1, 'Minnie', '04-Dec-2019', 1, 'F');
+(3, 'Lizzard', '27-Mar-2019', 4, 'M');
+
+insert into Individual(cat_id, name, intake_date, age, sex)
+values
+(4, 'Franks', '15-Feb-2019', 2, 'M');
+
+insert into Individual(cat_id, name, intake_date, age, sex)
+values
+(5, 'Mojave', '1-Dec-2019', 1, 'M');
+
+insert into Individual(cat_id, name, intake_date, adopt_date, sex)
+values
+(6, 'Buster', '1-Dec-2019', '5-Feb-2019', 'M');
