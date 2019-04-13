@@ -34,6 +34,7 @@ create table cat_info
   DOB date,
   intake_date date,
   adopt_date date,
+  breed varchar2(20),
   age integer,
   sex char(1),
   adopter_id integer,
