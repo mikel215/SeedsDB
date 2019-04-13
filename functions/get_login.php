@@ -11,7 +11,8 @@ function make_login()
             <fieldset>
                 <label>
                     Username:
-                    <input type="text" name="username" class="usr_field" />
+                    <input type="text" name="username" class="usr_field"
+                            required="required"/>
                 </label>
                 <label>
                     Password:
@@ -26,14 +27,14 @@ function make_login()
 <?php
 }
 
-function connect()
+function connect($user, $password)
 {
     $db_conn_str =
         "(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)
                                        (HOST = cedar.humboldt.edu)
                                        (PORT = 1521))
                             (CONNECT_DATA = (SID = STUDENT)))";
-    $connection = oci_connect($usr, $pwd, $db_conn_str);
+    $connection = oci_connect($user, $password, $db_conn_str);
 
     if(! $connection)
     {

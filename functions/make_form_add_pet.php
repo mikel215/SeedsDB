@@ -21,6 +21,14 @@ function make_form_add_pet()
                     <input type="date" name="animal_intake_date" />
                 </label>
                 <label>
+                    Adopt Date:
+                    <input type="date" name="animal_adopt_date" />
+                </label>
+                <label>
+                    Breed:
+                    <input type="text" name="animal_breed" />
+                </label>
+                <label>
                     Age:
                     <input type="text" name="animal_age" />
                 </label>
