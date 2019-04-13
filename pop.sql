@@ -67,4 +67,24 @@ values
 
 insert into cat_info(cat_id, name, intake_date, breed, age, sex)
 values
-(6, 'Molly', '1-Dec-2019', 'Dilute Calico', 1, 'F');
+(7, 'Molly', '1-Dec-2019', 'Dilute Calico', 1, 'F');
+
+insert into cat_info(cat_id, name, intake_date, adopt_date, breed, age, sex)
+values
+(8, 'Erik', '12-Oct-2018', '2-Nov-2018' 'Siamese', 9, 'M');
+
+insert into cat_info(cat_id, name, intake_date, adopt_date, age, sex)
+values
+(9, 'Steve', '4-Aug-2018', '10-Sep-2018', 3, 'M');
+
+insert into cat_info(cat_id, name, intake_date, adopt_date, breed, age, sex)
+values
+(10, 'Sarah', '3-Jul-2018', '18-Sep-2018', 'Russian Blue', 5, 'F');
+
+insert into cat_info(cat_id, name, intake_date, adopt_date, age, sex)
+values
+(11, 'James', '14-Dec-2018', '4-Jan-2019', 4, 'M');
+
+insert into cat_info(cat_id, name, intake_date, adopt_date, age, sex)
+values
+(12, 'Harold', '28-Jan-2019', '01-Feb-2019', 10, 'M');
