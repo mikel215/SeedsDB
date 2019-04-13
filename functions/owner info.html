@@ -23,16 +23,18 @@
 
    <h1> Add Owner: </h1>
 
-   <form method="get"
+   <form method="post"
          action=
              "http://nrs-projects.humboldt.edu/~st10/s19cs328/328lab08/welcome.php">
        <fieldset>
            <fieldset>
                <legend> Person info: </legend>
-                   <label> Enter Persons Full Name:
-                       <input type="text" first_name="first_name" />
-                       <input type="text" last_name= "last_name" />
-                   </label> <br />
+                   <label> First Name:
+                       <input type="text" name="first_name" />
+                   </label>
+                   <label> Last Name:
+                       <input type="text" name= "last_name" />
+                   </label>
 
                    <label> Can Owner Adopt:
                        <label> No:
@@ -42,7 +44,6 @@
                        <input type="radio" value="true" />
                         </label>
                    </label> <br />
-                   <label
            </fieldset>
 
            <input type="submit" />

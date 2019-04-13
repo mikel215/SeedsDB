@@ -10,7 +10,8 @@ function make_form_add_pet()
                 <legend>Enter animal information</legend>
                 <label>
                     Name:
-                    <input type="text" name="animal_name" />
+                    <input type="text" name="animal_name"
+                            required="required"/>
                 </label>
                 <label>
                     Date of Birth:
