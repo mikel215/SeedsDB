@@ -12,7 +12,8 @@ CREATE TABLE Animal_information(
 
 CREATE TABLE Individual(
     individual_id INTEGER,
-    name varchar(20),
+    f_name varchar(20),
+    l_name varchar(20),
     adopt_status BOOLEAN,
     primary key(individual_id)
 );
@@ -31,7 +32,6 @@ create table cat_info
   cat_id integer;
   name varchar2(20);
   DOB date;
-  breed varchar2(20);
   intake_date date;
   adopt_date date;
   age integer;
