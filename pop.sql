@@ -4,39 +4,39 @@ delete from cat_info;
 delete from cat_owner;
 
 -- populating the Individual table
-insert into Individual
+insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
 (111, 'Johnny', 'Quest', TRUE);
 
-insert into Individual
+insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
 (222, 'Gayle', 'Belcher', FALSE);
 
-insert into Individual
+insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
 (333, 'Mark', 'Twain', FALSE);
 
-insert into Individual
+insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
 (444, 'Kurt', 'Cobain', TRUE);
 
-insert into Individual
+insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
 (555, 'Tory', 'Kay', TRUE);
 
-insert into Individual
+insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
 (666, 'Yoko', 'Ono', TRUE);
 
-insert into Individual
+insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
 (777, 'John', 'Lennon', FALSE);
 
-insert into Individual
+insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
 (888, 'Joseph', 'Joestar', TRUE);
 
-insert into Individual
+insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
 (999, 'Bob', 'Ross', TRUE);
 
@@ -71,7 +71,7 @@ values
 
 insert into cat_info(cat_id, name, intake_date, adopt_date, breed, age, sex)
 values
-(8, 'Erik', '12-Oct-2018', '2-Nov-2018' 'Siamese', 9, 'M');
+(8, 'Erik', '12-Oct-2018', '2-Nov-2018', 'Siamese', 9, 'M');
 
 insert into cat_info(cat_id, name, intake_date, adopt_date, age, sex)
 values
@@ -90,26 +90,26 @@ values
 (12, 'Harold', '28-Jan-2019', '01-Feb-2019', 10, 'M');
 
 -- populating the table cat_owner
-insert into cat_owner
+insert into cat_owner (cat_id, individual_id)
 values
 (111, 12);
 
-insert into cat_owner
+insert into cat_owner (cat_id, individual_id)
 values
 (111, 11);
 
-insert into cat_owner
+insert into cat_owner (cat_id, individual_id)
 values
 (111, 6);
 
-insert into cat_owner
+insert into cat_owner (cat_id, individual_id)
 values
 (111, 10);
 
-insert into cat_owner
+insert into cat_owner (cat_id, individual_id)
 values
 (444, 9);
 
-insert into cat_owner
+insert into cat_owner (cat_id, individual_id)
 values
 (444, 8);
