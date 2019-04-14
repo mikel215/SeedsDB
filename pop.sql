@@ -1,6 +1,7 @@
-delete from Individual;
-delete from cat_info;
 delete from cat_owner;
+delete from medical_info;
+delete from cat_info;
+delete from Individual;
 
 prompt populating the Individual table
 insert into Individual (individual_id, f_name, l_name, adopt_status)
@@ -39,6 +40,55 @@ insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
 (indiv_seq.nextval, 'Bob', 'Ross', 'T'); 
 
+
+prompt populating cat_info
+insert into cat_info(cat_id, name, intake_date, breed, age, sex)
+values
+(cat_seq.nextval, 'Minnie', '04-Apr-2019', 'DSH Tuxedo Mix', 1, 'F');
+
+insert into cat_info(cat_id, name, intake_date, age, sex)
+values
+(cat_seq.nextval, 'Saffron', '04-Mar-2019', 1, 'F');
+
+insert into cat_info(cat_id, name, intake_date, age, sex)
+values
+(cat_seq.nextval, 'Lizzard', '27-Mar-2019', 4, 'M');
+
+insert into cat_info(cat_id, name, intake_date, age, sex)
+values
+(cat_seq.nextval, 'Franks', '15-Feb-2019', 2, 'M');
+
+insert into cat_info(cat_id, name, intake_date, age, sex)
+values
+(cat_seq.nextval, 'Mojave', '1-Dec-2019', 1, 'M');
+
+insert into cat_info(cat_id, name, intake_date, adopt_date, sex)
+values
+(cat_seq.nextval, 'Buster', '1-Dec-2019', '5-Feb-2019', 'M');
+
+insert into cat_info(cat_id, name, intake_date, breed, age, sex)
+values
+(cat_seq.nextval, 'Molly', '1-Dec-2019', 'Dilute Calico', 1, 'F');
+
+insert into cat_info(cat_id, name, intake_date, adopt_date, breed, age, sex)
+values
+(cat_seq.nextval, 'Erik', '12-Oct-2018', '2-Nov-2018', 'Siamese', 9, 'M');
+
+insert into cat_info(cat_id, name, intake_date, adopt_date, age, sex)
+values
+(cat_seq.nextval, 'Steve', '4-Aug-2018', '10-Sep-2018', 3, 'M');
+
+insert into cat_info(cat_id, name, intake_date, adopt_date, breed, age, sex)
+values
+(cat_seq.nextval, 'Sarah', '3-Jul-2018', '18-Sep-2018', 'Russian Blue', 5, 'F');
+
+insert into cat_info(cat_id, name, intake_date, adopt_date, age, sex)
+values
+(cat_seq.nextval, 'James', '14-Dec-2018', '4-Jan-2019', 4, 'M');
+
+insert into cat_info(cat_id, name, intake_date, adopt_date, age, sex)
+values
+(cat_seq.nextval, 'Harold', '28-Jan-2019', '01-Feb-2019', 10, 'M');
 
 prompt populating medical_info
 insert into medical_info 
@@ -103,54 +153,6 @@ values
 
  
 
-prompt populating cat_info
-insert into cat_info(cat_id, name, intake_date, breed, age, sex)
-values
-(cat_seq.nextval, 'Minnie', '04-Apr-2019', 'DSH Tuxedo Mix', 1, 'F');
-
-insert into cat_info(cat_id, name, intake_date, age, sex)
-values
-(cat_seq.nextval, 'Saffron', '04-Mar-2019', 1, 'F');
-
-insert into cat_info(cat_id, name, intake_date, age, sex)
-values
-(cat_seq.nextval, 'Lizzard', '27-Mar-2019', 4, 'M');
-
-insert into cat_info(cat_id, name, intake_date, age, sex)
-values
-(cat_seq.nextval, 'Franks', '15-Feb-2019', 2, 'M');
-
-insert into cat_info(cat_id, name, intake_date, age, sex)
-values
-(cat_seq.nextval, 'Mojave', '1-Dec-2019', 1, 'M');
-
-insert into cat_info(cat_id, name, intake_date, adopt_date, sex)
-values
-(cat_seq.nextval, 'Buster', '1-Dec-2019', '5-Feb-2019', 'M');
-
-insert into cat_info(cat_id, name, intake_date, breed, age, sex)
-values
-(cat_seq.nextval, 'Molly', '1-Dec-2019', 'Dilute Calico', 1, 'F');
-
-insert into cat_info(cat_id, name, intake_date, adopt_date, breed, age, sex)
-values
-(cat_seq.nextval, 'Erik', '12-Oct-2018', '2-Nov-2018', 'Siamese', 9, 'M');
-
-insert into cat_info(cat_id, name, intake_date, adopt_date, age, sex)
-values
-(cat_seq.nextval, 'Steve', '4-Aug-2018', '10-Sep-2018', 3, 'M');
-
-insert into cat_info(cat_id, name, intake_date, adopt_date, breed, age, sex)
-values
-(cat_seq.nextval, 'Sarah', '3-Jul-2018', '18-Sep-2018', 'Russian Blue', 5, 'F');
-
-insert into cat_info(cat_id, name, intake_date, adopt_date, age, sex)
-values
-(cat_seq.nextval, 'James', '14-Dec-2018', '4-Jan-2019', 4, 'M');
-
-insert into cat_info(cat_id, name, intake_date, adopt_date, age, sex)
-values
-(cat_seq.nextval, 'Harold', '28-Jan-2019', '01-Feb-2019', 10, 'M');
 
 prompt populating the table cat_owner
 insert into cat_owner (cat_id, individual_id)
