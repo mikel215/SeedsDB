@@ -30,6 +30,9 @@ http://nrs-projects.humboldt.edu/~st10/s19cs328/328lect11-2/dept-details.php
         require_once("hsu_conn_sess.php");
         require_once("main_page.php);
 <<<<<<< Updated upstream:controller.php
+<<<<<<< Updated upstream:controller.php
+>>>>>>> Stashed changes:controller.php
+=======
 >>>>>>> Stashed changes:controller.php
 =======
 >>>>>>> Stashed changes:controller.php

@@ -10,11 +10,17 @@ CREATE TABLE Individual(
 drop sequence indiv_seq;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 create sequence indiv_seq
 increment by 1
 start with 100;
 
 drop table medical_info cascade constraints;
+=======
+create or replace sequence indiv_seq
+increment by 1
+start with 100;
+>>>>>>> Stashed changes
 =======
 create or replace sequence indiv_seq
 increment by 1
@@ -52,6 +58,7 @@ create table cat_info
 drop sequence cat_seq;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 create sequence cat_seq
 increment by 1
 start with 1;
@@ -60,11 +67,16 @@ drop table cat_owner cascade constraints;
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 create or replace sequence cat_seq
 increment by 1
 start with 1;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -80,6 +92,9 @@ create table cat_owner
   foreign key(individual_id) references individual
   primary key(cat_id, individual_id);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
