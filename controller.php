@@ -33,9 +33,18 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
     <h1> Humboldt Animal Rescue Team </h1>
 
     <?php
-
+    if (array_key_exists('next-stage',$_SESSION))
+    {
+	?> <p> <?= $_SESSION['next-stage'] ?> </p>
+	<?php
+    }
+    else
+    {
+	?> <p> no next-stage in $_SESSION </p> 
+	<?php
+    }
     // when "first" call this, create a login form
-
+    
     if (! array_key_exists('next-stage', $_SESSION))
     {
         make_login();
@@ -47,7 +56,26 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
     elseif ($_SESSION['next-stage'] == "main_page")
     {
         make_main_page();
+<<<<<<< HEAD
         $_SESSION['next-stage'] = "main_page_handler";
+=======
+        if (array_key_exists("cat_add", $_POST))
+        {
+            $_SESSION['next-stage'] = "insert_add_pet";
+        }
+        if (array_key_exists("owner_add", $_POST))
+        {
+            $_SESSION['next-stage'] = "insert_add_owner";
+        }
+        if (array_key_exists("searching", $_POST))
+        {
+            $_SESSION['next-stage'] = "search";
+        }
+        if (array_key_exists("statistics", $_POST))
+        {
+            $_SESSION['next-stage'] = "stats";
+        }
+>>>>>>> d08798e22bb8e25ac70ae11e587e3729666ea1a5
         // make_main_page() sets the next session itself
     }
     elseif($_SESSION['next-stage'] == "main_page_handler")
