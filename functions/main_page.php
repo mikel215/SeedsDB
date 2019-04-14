@@ -31,7 +31,7 @@ function make_main_page()
                                    ENT_QUOTES) ?>">
 
            <div id="add_cat">
-               <input type="submit" value="Add a cat" name="cat_add" class="main_sub"/> 
+               <input type="submit" value="Add a cat" name="cat_add" id="cat"/> 
            </div>
 
            <div id="add_owner">
