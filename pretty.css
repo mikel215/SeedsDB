@@ -55,9 +55,9 @@ img
   width: 100px;
   height: 100px;
 }
-.main_sub
+#cat
 {
-  background: url("https://cdn.24.co.za/files/Cms/General/d/6532/6c585dd94a694103927485114f6b2147.jpg");
-  height: 400px;
-  width: 400px;
+  background: url("https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/02/11111256/Black-Cat-PNG-Transparent-1024x1024.png");
+  height: 200px;
+  width: 200px;
 }
