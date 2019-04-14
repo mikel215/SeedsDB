@@ -53,29 +53,5 @@ function make_main_page()
       </form>
   <?php
   }
-  else
-  {
-
-      if (array_key_exists("cat_add", $_POST))
-      {
-        $_SESSION['next-stage'] = "insert_add_pet";
-      }
-      if (array_key_exists("owner_add", $_POST))
-      {
-        $_SESSION['next-stage'] = "insert_add_owner";
-      }
-      if (array_key_exists("searching", $_POST))
-      {
-        $_SESSION['next-stage'] = "search";
-      }
-      if (array_key_exists("statistics", $_POST))
-      {
-        $_SESSION['next-stage'] = "stats";
-      }
-
-
-  }
-
-
 }
 ?>
