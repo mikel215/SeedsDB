@@ -79,5 +79,6 @@ input[type="submit"]
 {
   color: STEELBLUE;
   font-size: 40px;
+  font-align: bottom;
 }
 
