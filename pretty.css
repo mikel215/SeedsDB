@@ -55,3 +55,7 @@ img
   width: 100px;
   height: 100px;
 }
+input[type="submit"]
+{
+  background: "Smirk.jpg";
+}
