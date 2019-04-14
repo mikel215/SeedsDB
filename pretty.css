@@ -46,3 +46,7 @@ p, h1, legend
   font-family: "Perpetua", Garamond, serif;
   color: MEDIUMAQUAMARINE;
 }
+h1
+{
+  text-align: center;
+}
