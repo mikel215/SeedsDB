@@ -46,9 +46,10 @@ function make_form_add_pet()
         </form>
         <?php
     }
+    /*
     else
     {
        insert_add_pet();
-    }
+    }*/
 }
 ?>
