@@ -44,4 +44,6 @@ function insert_add_pet()
     oci_execute($db_insert, OCI_DEFAULT);
     oci_commit($conn);
     oci_free_statement($db_insert);
+
+    oci_close($conn);
 }

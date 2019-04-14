@@ -72,7 +72,6 @@ function insert_add_owner()
         oci_commit($conn);
         oci_free_statement($insert_owner);
 
-        oci_close($conn);
-
     }
+    oci_close($conn);
 }

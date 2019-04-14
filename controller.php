@@ -19,10 +19,14 @@ http://nrs-projects.humboldt.edu/~st10/s19cs328/328lect11-2/dept-details.php
     /* these are bringing in needed PHP functions */
         require_once("/functions/get_login.php");
         require_once("/functions/make_form_add_pet.php");
+        require_once("/functions/make_form_add_owner.php");
+        require_once("/functions/insert_add_owner.php");
+        require_once("/functions/insert_add_pet.php");
         require_once("/functions/destroy_and_exit.php");
         require_once("/functions/hsu_conn_sess.php");
         require_once("/functions/main_page.php");
     ?>
+
     <link href="pretty.css" type="text/css" rel="stylesheet" />
 </head>
 
@@ -39,8 +43,7 @@ http://nrs-projects.humboldt.edu/~st10/s19cs328/328lect11-2/dept-details.php
         $_SESSION['next-stage'] = "main_page";
     }
 
-    // when user sends login info, dynamically create a select/drop-down
-    //    of possible departments, queried from the database
+    // when user sends login info, show main page prompts
 
     elseif ($_SESSION['next-stage'] == "main_page")
     {
@@ -49,11 +52,11 @@ http://nrs-projects.humboldt.edu/~st10/s19cs328/328lect11-2/dept-details.php
     }
     elseif ($_SESSION['next-stage'] == "insert_add_pet")
     {
-        insert_add_pet();
+        make_form_add_pet();
     }
     elseif ($_SESSION['next-stage'] == "insert_add_owner")
     {
-        insert_add_owner();
+        make_form_add_owner();
     }
     elseif ($_SESSION['next-stage'] == "search")
     {
