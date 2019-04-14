@@ -19,6 +19,8 @@ function insert_add_owner()
 
     $conn = connect($username, $password);
 
+    // first, get next sequence value into a variable
+    $sequence_query_str = "select indiv_seq.nextval "
     $db_insert_string = "insert into Individual
                   values(:f_name, :l_name, :adopt_status";
     $db_insert = oci_parse($conn, $db_insert_string);
