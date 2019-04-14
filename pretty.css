@@ -3,28 +3,28 @@
   color: indianred;
   float:left;
   width: 50%;
-  height: 40%;
+  height: 500px;
 }
 #add_owner
 {
   color: lavender;
   float: right;
   width: 50%;
-  height: 40%;
+  height: 500px;
 }
 #stats
 {
   color: darkseagreen;
   float: right;
   width: 50%;
-  height: 40%;
+  height: 500px;
 }
 #search
 {
   color: coral ;
   float: left;
   width: 50%;
-  height: 40%;
+  height: 500px;
 }
 /* label text style */
 label{
