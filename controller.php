@@ -17,13 +17,13 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
 
     <?php
     /* these are bringing in needed PHP functions */
-	require_once("http://nrs-projects.humboldt.edu/~erw35/SeedsDB/functions/get_login.php");
-	require_once("http://nrs-projects.humboldt.edu/~erw35/SeedsDB/functions/make_form_add_pet.php");
-	require_once("http://nrs-projects.humboldt.edu/~erw35/SeedsDB/functions/make_form_add_owner.php");
-	require_once("http://nrs-projects.humboldt.edu/~erw35/SeedsDB/functions/insert_add_owner.php");
-	require_once("http://nrs-projects.humboldt.edu/~erw35/SeedsDB/functions/destroy_and_exit.php");
-	require_once("http://nrs-projects.humboldt.edu/~erw35/SeedsDB/functions/hsu_conn_sess.php");
-	require_once("http://nrs-projects.humboldt.edu/~erw35/SeedsDB/functions/main_page.php");
+	require_once("functions/get_login.php");
+	require_once("functions/make_form_add_pet.php");
+	require_once("functions/make_form_add_owner.php");
+	require_once("functions/insert_add_owner.php");
+	require_once("functions/destroy_and_exit.php");
+	require_once("functions/hsu_conn_sess.php");
+	require_once("functions/main_page.php");
     ?>
 
     <link href="pretty.css" type="text/css" rel="stylesheet" />
