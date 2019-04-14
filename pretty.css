@@ -2,29 +2,29 @@
 {
   color: indianred;
   float:left;
-  width: 50%;
-  height: 40%;
 }
 #add_owner
 {
   color: lavender;
   float: right;
-  width: 50%;
-  height: 40%;
+  /*width: 50%;
+  height: 40%;*/
 }
 #stats
 {
   color: darkseagreen;
   float: right;
+  /*
   width: 50%;
-  height: 40%;
+  height: 40%;*/
 }
 #search
 {
   color: coral ;
   float: left;
+  /*
   width: 50%;
-  height: 40%;
+  height: 40%;*/
 }
 /* label text style */
 label{
