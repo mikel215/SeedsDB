@@ -11,10 +11,13 @@ function make_main_page()
     {
         destroy_and_exit("must enter a username and password!");
     }
+
+    /*
     $username = strip_tags($_POST["username"]);
     $password = $_POST["password"];
     $_SESSION["username"] = $username;
     $_SESSION["password"] = $password;
+    */
 
     if ((! array_key_exists("cat_add", $_POST)) &&
         (! array_key_exists("owner_add", $_POST)) &&

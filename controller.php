@@ -47,7 +47,13 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
     elseif ($_SESSION['next-stage'] == "main_page")
     {
         make_main_page();
+        $_SESSION['next-stage'] = "main_page_handler";
         // make_main_page() sets the next session itself
+    }
+    elseif($_SESSION['next-stage'] == "main_page_handler")
+    {
+        // handle the main page options here
+
     }
     elseif ($_SESSION['next-stage'] == "insert_add_pet")
     {
