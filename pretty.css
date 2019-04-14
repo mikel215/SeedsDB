@@ -34,13 +34,8 @@ label{
 form{
     background-color: forestgreen ;
   }
-img 
-{
-  width: 50em;
-  height:50em;
 
-}
-h1, p
+h1, p, legend
 {
   font-family: "Perpetua", Garamond, serif
 }
