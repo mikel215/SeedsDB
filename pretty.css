@@ -39,6 +39,7 @@ body
 {
   background-color: mintcream;
   background-image: url("https://www.petdoors.com/blog/wp-content/uploads/2012/04/happy-cat-15465-1000x288.jpg");
+  background-position: bottom left;
   background-attachment: fixed;
 }
 
