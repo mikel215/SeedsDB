@@ -47,7 +47,7 @@ function make_main_page()
 
            <div id="stats">
              <input type="submit" value="Stats" name="statistics"/>
-             <img src="Status-Graph.png" alt="Status-Graph">
+             <img src="Status-Graph.png" alt="Bar Graph">
            </div>
 
       </form>
