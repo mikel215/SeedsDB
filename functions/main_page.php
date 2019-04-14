@@ -39,7 +39,7 @@ function make_main_page()
 
            <div id="search">
               <input type="submit" value="Search" name="searching"/>
-              <img src="cat-dog.png" alt="cat & dog">
+              <img src="cat-dog.png" alt="Search">
            </div>
 
            <div id="stats">
