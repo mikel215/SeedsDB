@@ -57,5 +57,5 @@ img
 }
 input[type="submit"]
 {
-  background: "Smirk.jpg";
+  background: url("Smirk.jpg");
 }
