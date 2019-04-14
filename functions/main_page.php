@@ -31,20 +31,20 @@ function make_main_page()
                                    ENT_QUOTES) ?>">
 
            <div id="add_cat">
-               <input type="submit" value="Add a cat" name="cat_add" id="cat"/> 
+               <input type="submit" id="cat" value="Add a cat" name="cat_add" /> 
            </div>
 
            <div id="add_owner">
-               <input type="submit" value="Add a owner" name="owner_add" class="main_sub"/>
+               <input type="submit" id="owner" value="Add a owner" name="owner_add" />
            </div>
 
            <div id="search">
-              <input type="submit" value="Search" name="searching" class="main_sub"/>
+              <input type="submit" id="lookup" value="Search" name="searching" />
 
            </div>
 
            <div id="stats">
-             <input type="submit" value="Stats" name="statistics" class="main_sub"/>
+             <input type="submit" id="stat" value="Stats" name="statistics" />
            </div>
 
       </form>
