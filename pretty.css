@@ -72,15 +72,15 @@ h1
 #stat
 {
   background: url("https://media.tenor.com/images/ea862c2c1781bb4233ef774f8dfe7f19/tenor.gif");
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 35px;
 }
 input[type="submit"]
 {
   color: teal;
   font-size: 40px;
   background-color: ROSYBROWN;
-  font-family: "Arial Black";
+  font-family: "French Script MT Black";
   
 
 }
