@@ -58,6 +58,24 @@ img
 #cat
 {
   background: url("https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/02/11111256/Black-Cat-PNG-Transparent-1024x1024.png");
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
+}
+#owner
+{
+  background: url("https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/02/11111256/Black-Cat-PNG-Transparent-1024x1024.png");
+  height: 300px;
+  width: 300px;
+}
+#lookup
+{
+  background: url("https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/02/11111256/Black-Cat-PNG-Transparent-1024x1024.png");
+  height: 300px;
+  width: 300px;
+}
+#stat
+{
+  background: url("https://d1yn1kh78jj1rr.cloudfront.net/image/thumbnail/QIAQ9Rd/storyblocks-financial-graph-chart-bar-arrow-growth-concept-vector-illustration_rdWcmp6eTb_thumb.jpg");
+  height: 300px;
+  width: 300px;
 }
