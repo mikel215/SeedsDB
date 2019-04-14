@@ -7,6 +7,21 @@ CREATE TABLE Individual(
     primary key(individual_id)
 );
 
+drop table cat_info cascade constraints;
+create table cat_info
+(
+    cat_id integer,
+    name varchar2(20),
+    DOB date,
+    intake_date date,
+    adopt_date date,
+    breed varchar2(20),
+    age integer,
+    sex char(1),
+    primary key(cat_id)
+);
+
+
 drop sequence indiv_seq;
 create sequence indiv_seq
 increment by 1
@@ -23,20 +38,6 @@ create table medical_info(
     primary key(medical_id)
 );
 
-drop table cat_info cascade constraints;
-create table cat_info
-(
-  cat_id integer,
-  name varchar2(20),
-  DOB date,
-  intake_date date,
-  adopt_date date,
-  breed varchar2(20),
-  age integer,
-  sex char(1),
-  primary key(cat_id)
-);
-
 drop sequence cat_seq;
 create sequence cat_seq
 increment by 1
@@ -48,7 +49,7 @@ create table cat_owner
   cat_id integer,
   individual_id integer,
   foreign key(cat_id) references cat_info,
-  foreign key(individual_id) references individual
-  primary key(cat_id, individual_id);
+  foreign key(individual_id) references individual,
+  primary key(cat_id, individual_id)
 
 );
