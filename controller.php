@@ -21,6 +21,7 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
 	require_once("functions/make_form_add_pet.php");
 	require_once("functions/make_form_add_owner.php");
 	require_once("functions/insert_add_owner.php");
+	require_once("functions/insert_add_pet.php");
 	require_once("functions/destroy_and_exit.php");
 	require_once("functions/hsu_conn_sess.php");
 	//require_once("functions/getCatId.sql");
