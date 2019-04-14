@@ -2,7 +2,6 @@
 function insert_add_pet()
 {
     // Exit if username or password missing
-    /*
     if ( (! array_key_exists("username", $_POST)) or
         (! array_key_exists("password", $_POST)) or
         ($_POST["username"] == "") or
@@ -12,12 +11,15 @@ function insert_add_pet()
     {
         destroy_and_exit("must enter a username and password!");
     }
-    */
+    /*
     $username = strip_tags($_POST["username"]);
     $password = $_POST["password"];
-
     $_SESSION["username"] = $username;
     $_SESSION["password"] = $password;
+    */
+
+    $username = strip_tags($_SESSION["username"]);
+    $password = $_SESSION["password"];
 
     $conn = connect($username, $password);
 
