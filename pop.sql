@@ -92,64 +92,64 @@ values
 
 prompt populating medical_info
 insert into medical_info 
-(medical_id, spayed_neutered, medication, medication_cost)
+(medical_id, spayed_neutered, medication, medication_cost, cat_id)
 values
-(1, 'F','Anti-parasite', 14.99);
+(1, 'F','Anti-parasite', 14.99,1);
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN)
+(medical_id, spayed_neutered, DOSN, cat_id)
 values
-(2, 'T', '12-Mar-2019');
+(2, 'T', '12-Mar-2019',2);
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+(medical_id, spayed_neutered, DOSN, medication, medication_cost, cat_id)
 values
-(3, 'T', '04-Apr-2019', 'Anti-fungal', 5.99);
+(3, 'T', '04-Apr-2019', 'Anti-fungal', 5.99,3);
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN)
+(medical_id, spayed_neutered, DOSN, cat_id)
 values
-(4, 'T', '23-Feb-2019');
+(4, 'T', '23-Feb-2019',4);
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+(medical_id, spayed_neutered, DOSN, medication, medication_cost, cat_id)
 values
-(5, 'T', '9-Dec-2018', 'Anti-Flea', 19.99)
+(5, 'T', '9-Dec-2018', 'Anti-Flea', 19.99, 5)
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+(medical_id, spayed_neutered, DOSN, medication, medication_cost, cat_id)
 values
-(6, 'T', '10-Dec-2018', 'Anti-Flea', 19.99);
+(6, 'T', '10-Dec-2018', 'Anti-Flea', 19.99, 6);
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+(medical_id, spayed_neutered, DOSN, medication, medication_cost, cat_id)
 values
-(7, 'T', '11-Dec-2018', 'Anti-Parasite', 14.99);
+(7, 'T', '11-Dec-2018', 'Anti-Parasite', 14.99, 7);
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+(medical_id, spayed_neutered, DOSN, medication, medication_cost, cat_id)
 values
-(8, 'T', '20-Oct-2018', 'Anti-Flea', 19.99);
+(8, 'T', '20-Oct-2018', 'Anti-Flea', 19.99, 8);
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN)
+(medical_id, spayed_neutered, DOSN, cat_id)
 values
-(9, 'T', '12-Aug-2018');
+(9, 'T', '12-Aug-2018', 9);
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+(medical_id, spayed_neutered, DOSN, medication, medication_cost, cat_id)
 values
-(10, 'T', '11-Jul-2018', 'Anti-Diarrhea', 3.50);
+(10, 'T', '11-Jul-2018', 'Anti-Diarrhea', 3.50, 10);
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN)
+(medical_id, spayed_neutered, DOSN, cat_id)
 values
-(11, 'T', '22-Dec-2018');
+(11, 'T', '22-Dec-2018', 11);
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+(medical_id, spayed_neutered, DOSN, medication, medication_cost, cat_id)
 values
-(12, 'T', '03-Feb-2019', 'Antibiotics', 99.99);
+(12, 'T', '03-Feb-2019', 'Antibiotics', 99.99, 12);
 
  
 
