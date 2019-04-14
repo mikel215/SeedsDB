@@ -29,6 +29,9 @@ http://nrs-projects.humboldt.edu/~st10/s19cs328/328lect11-2/dept-details.php
         require_once("destroy_and_exit.php");
         require_once("hsu_conn_sess.php");
         require_once("main_page.php);
+<<<<<<< Updated upstream:controller.php
+>>>>>>> Stashed changes:controller.php
+=======
 >>>>>>> Stashed changes:controller.php
     ?>
     <link href="pretty.css" type="text/css" rel="stylesheet" />
