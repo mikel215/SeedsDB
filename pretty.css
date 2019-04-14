@@ -37,8 +37,12 @@ form{
 
 body, p, h1, legend
 {
-  font-family: "Perpetua", Garamond, serif;
-  color: MEDIUMAQUAMARINE;
   background-color: mintcream;
 
+}
+
+p, h1, legend
+{
+  font-family: "Perpetua", Garamond, serif;
+  color: MEDIUMAQUAMARINE;
 }
