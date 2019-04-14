@@ -8,7 +8,7 @@
 <!--
     last modified: 2019-04-11
     you can run this using the URL:
-http://nrs-projects.humboldt.edu/~st10/s19cs328/328lect11-2/dept-details.php
+http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
 -->
 
 <head>
