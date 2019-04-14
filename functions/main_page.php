@@ -34,6 +34,7 @@ function make_main_page()
 
            <div id="add_owner">
                <input type="submit" value="Add a owner" name="owner_add"/>
+               <ing src="Smirk.png" alt="Smirk">
            </div>
 
            <div id="search">
