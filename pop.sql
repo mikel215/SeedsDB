@@ -5,6 +5,7 @@ delete from cat_owner;
 prompt populating the Individual table
 insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
+<<<<<<< Updated upstream
 (indiv_seq.nextval, 'Johnny', 'Quest', 'T');
 
 insert into Individual (individual_id, f_name, l_name, adopt_status)
@@ -38,6 +39,41 @@ values
 insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
 (indiv_seq.nextval, 'Bob', 'Ross', 'T'); 
+=======
+(indiv_seq.nextval, 'Johnny', 'Quest', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Gayle', 'Belcher', FALSE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Mark', 'Twain', FALSE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Kurt', 'Cobain', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Tory', 'Kay', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Yoko', 'Ono', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'John', 'Lennon', FALSE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Joseph', 'Joestar', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Bob', 'Ross', TRUE);
+>>>>>>> Stashed changes
 
 prompt populating medical_info
 insert into medical_info 

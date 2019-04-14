@@ -17,11 +17,19 @@ http://nrs-projects.humboldt.edu/~st10/s19cs328/328lect11-2/dept-details.php
 
     <?php
     /* these are bringing in needed PHP functions */
+<<<<<<< Updated upstream:controller.php
         require_once("/functions/get_login.php");
         require_once("/functions/make_form_add_pet.php");
         require_once("/functions/destroy_and_exit.php");
         require_once("/functions/hsu_conn_sess.php");
         require_once("/functions/main_page.php");
+=======
+        require_once("get_login.php");
+        require_once("make_form_add_pet.php");
+        require_once("destroy_and_exit.php");
+        require_once("hsu_conn_sess.php");
+        require_once("main_page.php);
+>>>>>>> Stashed changes:controller.php
     ?>
     <link href="pretty.css" type="text/css" rel="stylesheet" />
 </head>
