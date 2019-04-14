@@ -1,0 +1,36 @@
+#add_cat
+{
+  color: indianred;
+  float:left;
+  width: 50%;
+  height: 40%;
+}
+#add_owner
+{
+  color: lavender;
+  float: right;
+  width: 50%;
+  height: 40%;
+}
+#stats
+{
+  color: darkseagreen;
+  float: right;
+  width: 50%;
+  height: 40%;
+}
+#search
+{
+  color: lightsteelblue;
+  float: left;
+  width: 50%;
+  height: 40%;
+}
+/* label text style */
+label{
+    font-family: "Arial Black";
+  }
+/*background-color of the text box*/
+form{
+    background-color: lightseagreen ;
+  }
