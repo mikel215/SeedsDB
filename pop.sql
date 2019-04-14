@@ -3,6 +3,16 @@ delete from medical_info;
 delete from cat_info;
 delete from Individual;
 
+drop sequence indiv_seq;
+create sequence indiv_seq
+increment by 1
+start with 100;
+
+drop sequence cat_seq;
+create sequence cat_seq
+increment by 1
+start with 2;
+
 prompt populating the Individual table
 insert into Individual (individual_id, f_name, l_name, adopt_status)
 values

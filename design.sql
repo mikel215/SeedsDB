@@ -22,10 +22,6 @@ create table cat_info
 );
 
 
-drop sequence indiv_seq;
-create sequence indiv_seq
-increment by 1
-start with 100;
 
 drop table medical_info cascade constraints;
 create table medical_info(
@@ -39,10 +35,6 @@ create table medical_info(
     primary key(medical_id)
 );
 
-drop sequence cat_seq;
-create sequence cat_seq
-increment by 1
-start with 2;
 
 drop table cat_owner cascade constraints;
 create table cat_owner
