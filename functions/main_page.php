@@ -39,13 +39,12 @@ function make_main_page()
            </div>
 
            <div id="search">
-              <input type="submit" value="Search" name="searching"/>
-              <img src="cat-dog.jpg" alt="Search" width = "120" height = "90" class="main_sub"/>
+              <input type="submit" value="Search" name="searching" class="main_sub"/>
+
            </div>
 
            <div id="stats">
-             <input type="submit" value="Stats" name="statistics"/>
-             <img src="Status-Graph.jpg" alt="Bar Graph" width = "120" height = "90" class="main_sub"/>
+             <input type="submit" value="Stats" name="statistics" class="main_sub"/>
            </div>
 
       </form>
