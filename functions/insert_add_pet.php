@@ -2,8 +2,8 @@
 function insert_add_pet()
 {
     // Exit if username or password missing
-    if ( (! array_key_exists("username", $_POST)) or
-        (! array_key_exists("password", $_POST)) or
+    if ( (! array_key_exists("username", $_SESSION)) or
+        (! array_key_exists("password", $_SESSION)) or
         ($_POST["username"] == "") or
         ($_POST["password"] == "") or
         (! isset($_POST["username"])) or

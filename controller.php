@@ -51,6 +51,8 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
     if (! array_key_exists('next-stage', $_SESSION))
     {
         make_login();
+        $_SESSION["username"] = $_POST["username"];
+        $_SESSION["password"] = $_POST["password"];
         $_SESSION['next-stage'] = "main_page";
     }
 
@@ -58,8 +60,6 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
 
     elseif ($_SESSION['next-stage'] == "main_page")
     {
-        $_SESSION["username"] = $_POST["username"];
-        $_SESSION["password"] = $_POST["password"];
         make_main_page();
         $_SESSION['next-stage'] = "main_page_handler";
         // make_main_page() sets the next session itself
