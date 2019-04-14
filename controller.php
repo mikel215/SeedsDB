@@ -51,8 +51,6 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
     if (! array_key_exists('next-stage', $_SESSION))
     {
         make_login();
-        $_SESSION["username"] = $_POST["username"];
-        $_SESSION["password"] = $_POST["password"];
         $_SESSION['next-stage'] = "main_page";
     }
 
