@@ -28,7 +28,7 @@
 }
 /* label text style */
 label{
-    font-family: "fantasy";
+    font-family: "Arial Black";
   }
 /*background-color of the text box*/
 form{
@@ -39,6 +39,7 @@ body
 {
   background-color: mintcream;
   background-image: url("https://www.petdoors.com/blog/wp-content/uploads/2012/04/happy-cat-15465-1000x288.jpg");
+  background-attachment: fixed;
 }
 
 p, h1, legend
