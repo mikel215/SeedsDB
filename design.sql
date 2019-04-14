@@ -49,7 +49,6 @@ create table cat_owner
   cat_id integer,
   individual_id integer,
   foreign key(cat_id) references cat_info,
-  foreign key(individual_id) references individual,
+  foreign key(individual_id) references Individual,
   primary key(cat_id, individual_id)
-
 );
