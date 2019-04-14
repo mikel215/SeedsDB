@@ -1,6 +1,7 @@
 <?php
 function make_main_page()
 {
+  # if not logged in, go to login page
     if ( (! array_key_exists("username", $_POST)) or
          (! array_key_exists("password", $_POST)) or
          ($_POST["username"] == "") or
@@ -15,28 +16,59 @@ function make_main_page()
     #$_SESSION["username"] = $username;
     #$_SESSION["password"] = $password;
 
+    if ((! array_key_exists("cat_add", $_POST)) &&
+        (! array_key_exists("owner_add", $_POST)) &&
+        (! array_key_exists("searching", $_POST)) &&
+        (! array_key_exists("statistics", $_POST)))
+    {
     ?>
-    <form method="post"
-        action="<?= htmlentities($_SERVER['PHP_SELF'],
-                                 ENT_QUOTES) ?>">
 
-         <div id="add_cat">
-             <input type="submit" value="Add a cat"/>
-         </div>
+      <form method="post"
+          action="<?= htmlentities($_SERVER['PHP_SELF'],
+                                   ENT_QUOTES) ?>">
 
-         <div id="add_owner">
-             <input type="submit" value="Add a owner"/>
-         </div>
+           <div id="add_cat">
+               <input type="submit" value="Add a cat" name="cat_add"/>
+           </div>
 
-         <div id="search">
-            <input type="submit" value="Search"/>
-         </div>
+           <div id="add_owner">
+               <input type="submit" value="Add a owner" name="owner_add"/>
+           </div>
 
-         <div id="stats">
-           <input type="submit" value="Stats"/>
-         </div>
+           <div id="search">
+              <input type="submit" value="Search" name="searching"/>
+           </div>
 
-    </form>
-    <?php
+           <div id="stats">
+             <input type="submit" value="Stats" name="statistics"/>
+           </div>
+
+      </form>
+  <?php
+  }
+  else
+  {
+
+      if (array_key_exists("cat_add", $_POST))
+      {
+        $_SESSION['next-stage'] = "insert_add_pet";
+      }
+      if (array_key_exists("owner_add", $_POST))
+      {
+        $_SESSION['next-stage'] = "insert_add_owner";
+      }
+      if (array_key_exists("searching", $_POST))
+      {
+        $_SESSION['next-stage'] = "search";
+      }
+      if (array_key_exists("statistics", $_POST))
+      {
+        $_SESSION['next-stage'] = "stats";
+      }
+
+
+  }
+
+
 }
 ?>

@@ -17,11 +17,11 @@ http://nrs-projects.humboldt.edu/~st10/s19cs328/328lect11-2/dept-details.php
 
     <?php
     /* these are bringing in needed PHP functions */
-        require_once("get_login.php");
-        require_once("make_form_add_pet.php");
-        require_once("destroy_and_exit.php");
-        require_once("hsu_conn_sess.php");
-        require_once("main_page.php);
+        require_once("/functions/get_login.php");
+        require_once("/functions/make_form_add_pet.php");
+        require_once("/functions/destroy_and_exit.php");
+        require_once("/functions/hsu_conn_sess.php");
+        require_once("/functions/main_page.php");
     ?>
     <link href="pretty.css" type="text/css" rel="stylesheet" />
 </head>
@@ -45,16 +45,23 @@ http://nrs-projects.humboldt.edu/~st10/s19cs328/328lect11-2/dept-details.php
     elseif ($_SESSION['next-stage'] == "main_page")
     {
         make_main_page();
-        $_SESSION['next-stage'] = "get_dept_info";
+        // make_main_page() sets the next session itself
     }
-
-    // when user sends their choice of department,
-    //    query for and display some details about that department
-
-    elseif ($_SESSION['next-stage'] == "get_dept_info")
+    elseif ($_SESSION['next-stage'] == "insert_add_pet")
     {
-        get_dept_info();
-        session_destroy();
+        insert_add_pet();
+    }
+    elseif ($_SESSION['next-stage'] == "insert_add_owner")
+    {
+        insert_add_owner();
+    }
+    elseif ($_SESSION['next-stage'] == "search")
+    {
+        // search_page();
+    }
+    elseif ($_SESSION['next-stage'] == "stats")
+    {
+        // get_stats_page()
     }
     else
     {
