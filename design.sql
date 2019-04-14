@@ -41,7 +41,7 @@ create table medical_info(
 drop sequence cat_seq;
 create sequence cat_seq
 increment by 1
-start with 1;
+start with 0;
 
 drop table cat_owner cascade constraints;
 create table cat_owner
