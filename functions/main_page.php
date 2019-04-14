@@ -32,12 +32,12 @@ function make_main_page()
 
            <div id="add_cat">
                <input type="submit" value="Add a cat" name="cat_add"/> 
-               <img src="Black-Cat-PNG-Transparent.png" alt="Black-Cat">
+               <img src="Black-Cat-PNG-Transparent.png" alt="Cats">
            </div>
 
            <div id="add_owner">
                <input type="submit" value="Add a owner" name="owner_add"/>
-               <img src="Smirk.png" alt="Smirk">
+               <img src="Smirk.png" alt="Add Owner">
            </div>
 
            <div id="search">
