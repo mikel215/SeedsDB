@@ -6,6 +6,10 @@ CREATE TABLE Individual(
     primary key(individual_id)
 );
 
+drop sequence indiv_seq;
+create or replace sequence indiv_seq
+increment by 1
+start with 100;
 create table medical_info(
     medical_id INTEGER,
     spayed_neutered BOOLEAN,
@@ -24,8 +28,14 @@ create table cat_info
   adopt_date date,
   breed varchar2(20),
   age integer,
-  sex char(1)
+  sex char(1),
+  primary key(cat_id)
 );
+
+drop sequence cat_seq;
+create or replace sequence cat_seq
+increment by 1
+start with 1;
 
 create table cat_owner
 (
@@ -33,4 +43,5 @@ create table cat_owner
   individual_id integer,
   foreign key(cat_id) references cat_info,
   foreign key(individual_id) references individual
+  primary key(cat_id, individual_id);
 );

@@ -6,39 +6,39 @@ delete from cat_owner;
 -- populating the Individual table
 insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
-(111, 'Johnny', 'Quest', TRUE);
+(indiv_seq.nextval, 'Johnny', 'Quest', TRUE);
 
 insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
-(222, 'Gayle', 'Belcher', FALSE);
+(indiv_seq.nextval, 'Gayle', 'Belcher', FALSE);
 
 insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
-(333, 'Mark', 'Twain', FALSE);
+(indiv_seq.nextval, 'Mark', 'Twain', FALSE);
 
 insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
-(444, 'Kurt', 'Cobain', TRUE);
+(indiv_seq.nextval, 'Kurt', 'Cobain', TRUE);
 
 insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
-(555, 'Tory', 'Kay', TRUE);
+(indiv_seq.nextval, 'Tory', 'Kay', TRUE);
 
 insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
-(666, 'Yoko', 'Ono', TRUE);
+(indiv_seq.nextval, 'Yoko', 'Ono', TRUE);
 
 insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
-(777, 'John', 'Lennon', FALSE);
+(indiv_seq.nextval, 'John', 'Lennon', FALSE);
 
 insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
-(888, 'Joseph', 'Joestar', TRUE);
+(indiv_seq.nextval, 'Joseph', 'Joestar', TRUE);
 
 insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
-(999, 'Bob', 'Ross', TRUE);
+(indiv_seq.nextval, 'Bob', 'Ross', TRUE);
 
 -- population medical_info
 insert into medical_info 

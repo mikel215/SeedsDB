@@ -21,10 +21,9 @@ http://nrs-projects.humboldt.edu/~st10/s19cs328/328lect11-2/dept-details.php
         require_once("make_form_add_pet.php");
         require_once("destroy_and_exit.php");
         require_once("hsu_conn_sess.php");
+        require_once("main_page.php);
     ?>
-
-    <link href="http://users.humboldt.edu/smtuttle/styles/normalize.css"
-          type="text/css" rel="stylesheet" />
+    <link href="pretty.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
