@@ -86,7 +86,7 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
     elseif ($_SESSION['next-stage'] == "insert_add_pet")
     {
         make_form_add_pet();
-	$_SESSION['next-stage'] == "add_pet_handler";
+	$_SESSION['next-stage'] = "add_pet_handler";
     }
     elseif ($_SESSION['next-stage'] == "add_pet_handler")
     {
