@@ -23,6 +23,8 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
 	require_once("functions/insert_add_owner.php");
 	require_once("functions/destroy_and_exit.php");
 	require_once("functions/hsu_conn_sess.php");
+	require_once("functions/getCatId.sql");
+	require_once("functions/getSequenceVal.sql");
 	require_once("functions/main_page.php");
     ?>
 
