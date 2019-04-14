@@ -28,11 +28,13 @@ function make_main_page()
                                    ENT_QUOTES) ?>">
 
            <div id="add_cat">
-               <input type="submit" value="Add a cat" name="cat_add"/>
+               <input type="submit" value="Add a cat" name="cat_add"/> 
+               <ing src="Black-Cat-PNG-Transparent.png" alt="Black-Cat">
            </div>
 
            <div id="add_owner">
                <input type="submit" value="Add a owner" name="owner_add"/>
+               <ing src="Smirk.png" alt="Smirk">
            </div>
 
            <div id="search">
