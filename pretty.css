@@ -35,7 +35,10 @@ form{
     background-color: forestgreen ;
   }
 
-h1, p, legend
+html *
 {
-  font-family: "Perpetua", Garamond, serif
+  font-family: "Perpetua", Garamond, serif;
+  color: olivedrab;
+  background-color: mintcream;
+
 }
