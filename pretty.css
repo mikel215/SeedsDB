@@ -38,7 +38,7 @@ form{
 body
 {
   background-color: mintcream;
-
+  background-image: url("happycatbg.png");
 }
 
 p, h1, legend
@@ -84,4 +84,3 @@ input[type="submit"]
   
 
 }
-
