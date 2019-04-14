@@ -31,23 +31,21 @@ function make_main_page()
                                    ENT_QUOTES) ?>">
 
            <div id="add_cat">
-               <input type="submit" value="Add a cat" name="cat_add"/> 
-               <img src="Black-Cat-PNG-Transparent.jpg" alt="Cats" style="width:500px;height:600px;"/>
+               <input type="submit" value="Add a cat" name="cat_add" class="main_sub"/> 
            </div>
 
            <div id="add_owner">
-               <input type="submit" value="Add a owner" name="owner_add"/>
-               <img src="Smirk.jpg" alt="Add Owner" width = "120" height = "90"/>
+               <input type="submit" value="Add a owner" name="owner_add" class="main_sub"/>
            </div>
 
            <div id="search">
               <input type="submit" value="Search" name="searching"/>
-              <img src="cat-dog.jpg" alt="Search" width = "120" height = "90"/>
+              <img src="cat-dog.jpg" alt="Search" width = "120" height = "90" class="main_sub"/>
            </div>
 
            <div id="stats">
              <input type="submit" value="Stats" name="statistics"/>
-             <img src="Status-Graph.jpg" alt="Bar Graph" width = "120" height = "90"/>
+             <img src="Status-Graph.jpg" alt="Bar Graph" width = "120" height = "90" class="main_sub"/>
            </div>
 
       </form>
