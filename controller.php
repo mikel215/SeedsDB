@@ -45,7 +45,8 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
     {
 	?> <p> no next-stage in $_SESSION </p> 
 	<?php
-    }*/
+    }
+*/
 <?php
     // when "first" call this, create a login form
     
