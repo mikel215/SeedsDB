@@ -65,7 +65,7 @@ h1
 }
 #lookup
 {
-  background: url("https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/02/11111256/Black-Cat-PNG-Transparent-1024x1024.png");
+  background: url("https://png.pngtree.com/element_origin_min_pic/16/07/18/15578c87cc5db20.jpg");
   height: 300px;
   width: 300px;
 }
@@ -75,3 +75,7 @@ h1
   height: 300px;
   width: 300px;
 }
+input[type="submit]
+{
+}
+
