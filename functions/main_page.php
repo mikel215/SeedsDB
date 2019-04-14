@@ -29,7 +29,7 @@ function make_main_page()
 
            <div id="add_cat">
                <input type="submit" value="Add a cat" name="cat_add"/> 
-               <img src="Black-Cat-PNG-Transparent.png" alt="Black-Cat">
+               <img src="Black-Cat-PNG-Transparent.png" alt="Cats">
            </div>
 
            <div id="add_owner">
