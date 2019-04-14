@@ -26,3 +26,11 @@
   width: 50%;
   height: 40%;
 }
+/* label text style */
+label{
+    font-family: "Arial Black";
+  }
+/*background-color of the text box*/
+form{
+    background-color: lightslategray ;
+  }

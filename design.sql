@@ -19,6 +19,7 @@ create table medical_info(
     DOSN DATE,
     medication varchar(20),
     medication_cost NUMBER(6,2),
+    foreign key(medical_id) references cat_info(cat_id),
     primary key(medical_id)
 );
 
@@ -47,6 +48,7 @@ create table cat_owner
   cat_id integer,
   individual_id integer,
   foreign key(cat_id) references cat_info,
-  foreign key(individual_id) references individual,
-  primary key(cat_id, individual_id)
+  foreign key(individual_id) references individual
+  primary key(cat_id, individual_id);
+
 );

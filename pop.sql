@@ -1,11 +1,13 @@
-delete from Animal_information;
 delete from Individual;
 delete from cat_info;
 delete from cat_owner;
 
--- populating the Individual table
+prompt populating the Individual table
 insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 (indiv_seq.nextval, 'Johnny', 'Quest', 'T');
 
 insert into Individual (individual_id, f_name, l_name, adopt_status)
@@ -39,17 +41,122 @@ values
 insert into Individual (individual_id, f_name, l_name, adopt_status)
 values
 (indiv_seq.nextval, 'Bob', 'Ross', 'T'); 
+=======
+(indiv_seq.nextval, 'Johnny', 'Quest', TRUE);
+=======
+(indiv_seq.nextval, 'Johnny', 'Quest', TRUE);
+=======
+(indiv_seq.nextval, 'Johnny', 'Quest', TRUE);
 
--- population medical_info
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Gayle', 'Belcher', FALSE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Mark', 'Twain', FALSE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Kurt', 'Cobain', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Tory', 'Kay', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Yoko', 'Ono', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'John', 'Lennon', FALSE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Joseph', 'Joestar', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Bob', 'Ross', TRUE);
+>>>>>>> Stashed changes
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Gayle', 'Belcher', FALSE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Mark', 'Twain', FALSE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Kurt', 'Cobain', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Tory', 'Kay', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Yoko', 'Ono', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'John', 'Lennon', FALSE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Joseph', 'Joestar', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Bob', 'Ross', TRUE);
+>>>>>>> Stashed changes
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Gayle', 'Belcher', FALSE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Mark', 'Twain', FALSE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Kurt', 'Cobain', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Tory', 'Kay', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Yoko', 'Ono', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'John', 'Lennon', FALSE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Joseph', 'Joestar', TRUE);
+
+insert into Individual (individual_id, f_name, l_name, adopt_status)
+values
+(indiv_seq.nextval, 'Bob', 'Ross', TRUE);
+>>>>>>> Stashed changes
+
+prompt populating medical_info
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+(medical_id, spayed_neutered, medication, medication_cost)
 values
 (1, 'F','Anti-parasite', 14.99);
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+(medical_id, spayed_neutered, DOSN)
 values
-(2, 'T', '12-Mar-2019', NULL);
+(2, 'T', '12-Mar-2019');
 
 insert into medical_info 
 (medical_id, spayed_neutered, DOSN, medication, medication_cost)
@@ -57,9 +164,9 @@ values
 (3, 'T', '04-Apr-2019', 'Anti-fungal', 5.99);
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+(medical_id, spayed_neutered, DOSN)
 values
-(4, 'T', '23-Feb-2019', NULL);
+(4, 'T', '23-Feb-2019');
 
 insert into medical_info 
 (medical_id, spayed_neutered, DOSN, medication, medication_cost)
@@ -82,9 +189,9 @@ values
 (8, 'T', '20-Oct-2018', 'Anti-Flea', 19.99);
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+(medical_id, spayed_neutered, DOSN)
 values
-(9, 'T', '12-Aug-2018', NULL);
+(9, 'T', '12-Aug-2018');
 
 insert into medical_info 
 (medical_id, spayed_neutered, DOSN, medication, medication_cost)
@@ -92,9 +199,9 @@ values
 (10, 'T', '11-Jul-2018', 'Anti-Diarrhea', 3.50);
 
 insert into medical_info 
-(medical_id, spayed_neutered, DOSN, medication, medication_cost)
+(medical_id, spayed_neutered, DOSN)
 values
-(11, 'T', '22-Dec-2018', NULL);
+(11, 'T', '22-Dec-2018');
 
 insert into medical_info 
 (medical_id, spayed_neutered, DOSN, medication, medication_cost)
@@ -103,7 +210,7 @@ values
 
  
 
---populating cat_info
+prompt populating cat_info
 insert into cat_info(cat_id, name, intake_date, breed, age, sex)
 values
 (cat_seq.nextval, 'Minnie', '04-Apr-2019', 'DSH Tuxedo Mix', 1, 'F');
@@ -152,27 +259,27 @@ insert into cat_info(cat_id, name, intake_date, adopt_date, age, sex)
 values
 (cat_seq.nextval, 'Harold', '28-Jan-2019', '01-Feb-2019', 10, 'M');
 
--- populating the table cat_owner
+prompt populating the table cat_owner
 insert into cat_owner (cat_id, individual_id)
 values
-(111, 12);
+(12, 106);
 
 insert into cat_owner (cat_id, individual_id)
 values
-(111, 11);
+(11, 101);
 
 insert into cat_owner (cat_id, individual_id)
 values
-(111, 6);
+(6, 101);
 
 insert into cat_owner (cat_id, individual_id)
 values
-(111, 10);
+(10, 104);
 
 insert into cat_owner (cat_id, individual_id)
 values
-(444, 9);
+(9, 104);
 
 insert into cat_owner (cat_id, individual_id)
 values
-(444, 8);
+(8, 109);
