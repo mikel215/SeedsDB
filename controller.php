@@ -23,8 +23,8 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
 	require_once("functions/insert_add_owner.php");
 	require_once("functions/destroy_and_exit.php");
 	require_once("functions/hsu_conn_sess.php");
-	require_once("functions/getCatId.sql");
-	require_once("functions/getSequenceVal.sql");
+	//require_once("functions/getCatId.sql");
+	//require_once("functions/getSequenceVal.sql");
 	require_once("functions/main_page.php");
     ?>
 
@@ -85,6 +85,12 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
     elseif ($_SESSION['next-stage'] == "insert_add_pet")
     {
         make_form_add_pet();
+	$_SESSION['next-stage'] == "add_pet_handler";
+    }
+    elseif ($_SESSION['next-stage'] == "add_pet_handler")
+    {
+	    // function taken from make_form_add_pet
+	    insert_add_pet();
     }
     elseif ($_SESSION['next-stage'] == "insert_add_owner")
     {
