@@ -34,7 +34,6 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
 
 <body>
     <h1> Humboldt Animal Rescue Team </h1>
-/*
     <?php
     if (array_key_exists('next-stage',$_SESSION))
     {
@@ -45,9 +44,8 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
     {
 	?> <p> no next-stage in $_SESSION </p> 
 	<?php
-    }
-*/
-<?php
+   }
+
     // when "first" call this, create a login form
     
     if (! array_key_exists('next-stage', $_SESSION))
