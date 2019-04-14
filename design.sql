@@ -1,3 +1,4 @@
+drop table Individual cascade constraints;
 CREATE TABLE Individual(
     individual_id INTEGER,
     f_name varchar(20),
@@ -10,6 +11,8 @@ drop sequence indiv_seq;
 create sequence indiv_seq
 increment by 1
 start with 100;
+
+drop table medical_info cascade constraints;
 create table medical_info(
     medical_id INTEGER,
     spayed_neutered char(1) check(spayed_neutered IN ('T','F')),
@@ -19,6 +22,7 @@ create table medical_info(
     primary key(medical_id)
 );
 
+drop table cat_info cascade constraints;
 create table cat_info
 (
   cat_id integer,
@@ -37,11 +41,12 @@ create sequence cat_seq
 increment by 1
 start with 1;
 
+drop table cat_owner cascade constraints;
 create table cat_owner
 (
   cat_id integer,
   individual_id integer,
   foreign key(cat_id) references cat_info,
   foreign key(individual_id) references individual,
-  primary key(cat_id, individual_id);
+  primary key(cat_id, individual_id)
 );
