@@ -65,8 +65,8 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
     elseif($_SESSION['next-stage'] == "main_page_handler")
     {
         // handle the main page options here
-	if (array_key_exists("cat_add", $_POST))
-      	{
+        if (array_key_exists("cat_add", $_POST))
+        {
             $_SESSION['next-stage'] = "insert_add_pet";
         }
         if (array_key_exists("owner_add", $_POST))
@@ -86,7 +86,7 @@ http://nrs-projects.humboldt.edu/~erw35/SeedsDB/controller.php
     elseif ($_SESSION['next-stage'] == "insert_add_pet")
     {
         make_form_add_pet();
-	$_SESSION['next-stage'] = "add_pet_handler";
+        $_SESSION['next-stage'] = "add_pet_handler";
     }
     elseif ($_SESSION['next-stage'] == "add_pet_handler")
     {

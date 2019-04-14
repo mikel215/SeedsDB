@@ -1,6 +1,6 @@
 set serveroutput on
 
-create or replace function getSequenceVal()
+create or replace function getSequenceVal
     return integer as
     sequence_val    integer;
 begin
