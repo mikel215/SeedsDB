@@ -2,17 +2,17 @@ CREATE TABLE Individual(
     individual_id INTEGER,
     f_name varchar(20),
     l_name varchar(20),
-    adopt_status BOOLEAN,
+    adopt_status char(1) check(adopt_status IN ('T','F')),
     primary key(individual_id)
 );
 
 drop sequence indiv_seq;
-create or replace sequence indiv_seq
+create sequence indiv_seq
 increment by 1
 start with 100;
 create table medical_info(
     medical_id INTEGER,
-    spayed_neutered BOOLEAN,
+    spayed_neutered char(1) check(spayed_neutered IN ('T','F')),
     DOSN DATE,
     medication varchar(20),
     medication_cost NUMBER(6,2),
@@ -33,7 +33,7 @@ create table cat_info
 );
 
 drop sequence cat_seq;
-create or replace sequence cat_seq
+create sequence cat_seq
 increment by 1
 start with 1;
 
@@ -42,6 +42,6 @@ create table cat_owner
   cat_id integer,
   individual_id integer,
   foreign key(cat_id) references cat_info,
-  foreign key(individual_id) references individual
+  foreign key(individual_id) references individual,
   primary key(cat_id, individual_id);
 );
